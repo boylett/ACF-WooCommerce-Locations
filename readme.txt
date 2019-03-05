@@ -1,7 +1,7 @@
 === Advanced Custom Fields - WooCommerce Locations ===
 Contributors: boylett
 Tags: advanced, custom, fields, acf, advanced custom fields, woocommerce, page, settings, options, locations, location
-Requires PHP: 5.6
+Requires PHP: 7.0
 Requires at least: 4.4
 Tested up to: 5.0
 Stable tag: 1.3.1
