@@ -6,7 +6,7 @@
 	 * Description: Adds various WooCommerce pages as ACF locations
 	 * Author:      Ryan Boylett
 	 * Author URI:  https://github.com/boylett
-	 * Version:     0.0.1
+	 * Version:     0.0.2
 	 */
 
 	defined("ABSPATH") || exit;
@@ -52,7 +52,10 @@
 									$current_acf_field_tab   = NULL;
 									$current_acf_field_group = $field_group['key'];
 
-									echo '<h2>' . $field_group['title'] . '</h2>';
+									if($field_group['style'] != 'seamless')
+									{
+										echo '<h2>' . $field_group['title'] . '</h2>';
+									}
 
 									do_action('woocommerce_settings_acf-custom-field-group');
 								}, 1000);
